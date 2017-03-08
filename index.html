@@ -8,26 +8,39 @@ Versión : v1.0
 <head>
 	<meta charset="UTF-8">
 	<title>Ejercicio 5</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<h1>Operaciones aritméticas</h1>
-	<p>
-		<button onclick="suma(2);">+</button>
-		<button onclick="resta();">-</button>
-		<button onclick="multiplicacion(2);">*</button>
-		<button onclick="division();">/</button>
-	</p>
+	<div class="contenedor">
+	<header>
+		<h1>Operaciones aritméticas</h1>
+		<p class="botones">
+			<button onclick="suma(2);">+</button>
+			<button onclick="resta();">-</button>
+			<button onclick="multiplicacion(2);">*</button>
+			<button onclick="division();">/</button>
+		</p>
+	</header>
 	<hr>
-	<h2>Suma</h2>
-	<p><span id="n1suma"></span> + <span id="n2suma"></span> = <span id="solucionsuma"></span></p>
-	<h2>Resta</h2>
-	<p><span id="n1resta"></span> - <span id="n2resta"></span> = <span id="solucionresta"></span></p>
-	<h2>Multiplicación</h2>
-	<p><span id="n1multiplicacion"></span> * <span id="n2multiplicacion"></span> = <span id="solucionmultiplicacion"></span></p>
-	<h2>División</h2>
-	<p><span id="n1division"></span> / <span id="n2division"></span> = <span id="soluciondivision"></span></p>
-
-
+	<section>
+		<article class="suma">
+			<h2>Suma</h2>
+			<p><span id="n1suma"></span> + <span id="n2suma"></span> = <span id="solucionsuma"></span></p>
+		</article>
+		<article class="resta">
+			<h2>Resta</h2>
+			<p><span id="n1resta"></span> - <span id="n2resta"></span> = <span id="solucionresta"></span></p>
+		</article>
+		<article class="multiplicacion">
+			<h2>Multiplicación</h2>
+			<p><span id="n1multiplicacion"></span> * <span id="n2multiplicacion"></span> = <span id="solucionmultiplicacion"></span></p>
+		</article>
+		<article class="division">
+			<h2>División</h2>
+			<p><span id="n1division"></span> / <span id="n2division"></span> = <span id="soluciondivision"></span></p>
+		</article>
+	</section>
+	</div>
 	<script src="js/funciones.js"></script>
 </body>
 </html>
